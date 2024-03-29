@@ -6,6 +6,8 @@ namespace DevopsApp.Controllers
 {
     public class BlogPostController : Controller
     {
+        //made changes  ........................
+
         private readonly BlogDbContext _dbContext;
         public BlogPostController(BlogDbContext _dbContext)
         {
