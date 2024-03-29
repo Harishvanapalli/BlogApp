@@ -1,0 +1,89 @@
+﻿@model List<DevopsApp.Models.BlogModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .blog-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+            .blog-item img {
+                margin-top: 20px !important;
+                width: 80%;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+            }
+
+        .blog-item-content {
+            padding: 20px;
+        }
+
+        .blog-item-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .blog-item-meta {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .blog-item-description {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">All Blogs</h1>
+        @foreach (var row in Model)
+        {
+            <div class="blog-item">
+                <img src="@row.ImageUrl" alt="Blog Image" />
+                <div class="blog-item-content">
+                    <h2 class="blog-item-title">@row.Title</h2>
+                    <div class="blog-item-meta">
+                        <span>@row.Category</span> | <span>@row.Author</span> | <span>@row.PublishedDate.ToString("dd-MM-yyyy")</span>
+                    </div>
+                    <p class="blog-item-description">@row.Description</p>
+                </div>
+            </div>
+        }
+    </div>
+</body>
+</html>
