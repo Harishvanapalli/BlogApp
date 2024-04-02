@@ -2,7 +2,7 @@ using DevopsApp.Controllers;
 using DevopsApp.Data;
 using DevopsApp.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
 
@@ -16,10 +16,29 @@ namespace Devops.Tests
         [TestInitialize]
         public void Setup()
         {
-            var options = new DbContextOptionsBuilder<BlogDbContext>()
-                .UseInMemoryDatabase(databaseName: "TestDatabase")
-                .Options;
-            _dbContext = new BlogDbContext(options);
+            _dbContext = new BlogDbContext();
+  
+            _dbContext.Blogs.AddRange(new[]
+            {
+                new BlogModel
+                {
+                    Title = "Wow Car",
+                    Category = "Vehicles",
+                    Content = "Lamborghini Launched it's new car",
+                    Description = "Lamborghini launched another stylish car named 'Lamborghini Urus' this day, the car comes with many features and company claims it is the best car in SUV segment",
+                    Author = "Harish",
+                    ImageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7TBTTzWM5ndcMhEDRDCo1LCToGrGOzfmPhUz2jmWHoA&s"
+                },
+                new BlogModel
+                {
+                    Title = "Ferrari",
+                    Category = "Vehicles",
+                    Content = "Ferrari Launched it's new car named 'Ferrari Purosangue'",
+                    Description = "Ferrari launched an SUV named 'Purosangue' and it costs around 8.00 crore in India, this car can be the best competitor of Lamborghini Urus",
+                    Author = "Ramesh",
+                    ImageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkMna14MswKF6wNIxAq5mbp2qUlf-Yk1ZL7A&s"
+                }
+            });
         }
 
         [TestMethod]
@@ -64,7 +83,7 @@ namespace Devops.Tests
         {
             // Arrange
             var controller = new BlogPostController(_dbContext);
-            var initialCount = _dbContext.BlogTable.Count();
+            var initialCount = _dbContext.GetBlogs().Count();
             var blogModel = new ReferenceModel
             {
                 Title = "Test Title",
@@ -77,7 +96,7 @@ namespace Devops.Tests
 
             // Act
             controller.CreatePost(blogModel);
-            var finalCount = _dbContext.BlogTable.Count();
+            var finalCount = _dbContext.GetBlogs().Count();
 
             // Assert
             Assert.AreEqual(initialCount + 1, finalCount);

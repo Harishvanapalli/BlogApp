@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "541c+lCzGHdXIjXCDMtQQXQRwyUNpBOBEX+qHVDBnXcVRM1R8hnRTJ+k9xJiIyVMgnQ3pURNwQZYtj/WYOHpCQ==",
+  "dgSpecHash": "0tGQEWE9zd3hPZJhIPekL7C3hB3jZH2u9M+e4JtzJ+t4nAxzIWMvArZfGWxAYunCV0UPZL8BWSVO33P9S4FUng==",
   "success": true,
   "projectFilePath": "C:\\Users\\harishvanapalli\\OneDrive - Nagarro\\Desktop\\Devops\\DevopsApp\\DevopsApp\\DevopsApp.csproj",
   "expectedPackageFiles": [
@@ -44,6 +44,7 @@
     "C:\\Users\\harishvanapalli\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\harishvanapalli\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\harishvanapalli\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "C:\\Users\\harishvanapalli\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512",
     "C:\\Users\\harishvanapalli\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\harishvanapalli\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\harishvanapalli\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",

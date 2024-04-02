@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevopsApp", "DevopsApp\DevopsApp.csproj", "{C3B6FD25-4796-4A97-97A2-8959E16F6493}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devops.Tests", "Devops.Tests\Devops.Tests.csproj", "{3E590026-0CA2-47A6-895C-3014B6B420DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Devops.Tests", "Devops.Tests\Devops.Tests.csproj", "{3E590026-0CA2-47A6-895C-3014B6B420DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

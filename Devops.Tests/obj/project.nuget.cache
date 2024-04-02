@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MYytExKzpAI0ksntgtuTr3GorLV/XnpTZCts+NK4oW5nk1evlyfHrmxxRcYZLPcD5hsg/uXYxw2yXO/RkF+WxQ==",
+  "dgSpecHash": "k7e1Id2MfA8RpnOVoPwihAOaaUwAx0lHWppK69qcWWm1naOcw+1DyGkuzEtWIm3olGxzMpXIwvDBeAKiOgNK3g==",
   "success": true,
   "projectFilePath": "C:\\Users\\harishvanapalli\\OneDrive - Nagarro\\Desktop\\Devops\\DevopsApp\\Devops.Tests\\Devops.Tests.csproj",
   "expectedPackageFiles": [
@@ -41,6 +41,7 @@
     "C:\\Users\\harishvanapalli\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\harishvanapalli\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.6.0\\microsoft.testplatform.objectmodel.17.6.0.nupkg.sha512",
     "C:\\Users\\harishvanapalli\\.nuget\\packages\\microsoft.testplatform.testhost\\17.6.0\\microsoft.testplatform.testhost.17.6.0.nupkg.sha512",
+    "C:\\Users\\harishvanapalli\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512",
     "C:\\Users\\harishvanapalli\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\harishvanapalli\\.nuget\\packages\\mstest.testadapter\\3.0.4\\mstest.testadapter.3.0.4.nupkg.sha512",
     "C:\\Users\\harishvanapalli\\.nuget\\packages\\mstest.testframework\\3.0.4\\mstest.testframework.3.0.4.nupkg.sha512",

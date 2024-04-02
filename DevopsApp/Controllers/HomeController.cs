@@ -19,7 +19,7 @@ namespace DevopsApp.Controllers
 
         public IActionResult Index()
         {
-            var posts = _dbContext.BlogTable.ToList();
+            var posts = _dbContext.GetBlogs();
             return View(posts);
         }
 

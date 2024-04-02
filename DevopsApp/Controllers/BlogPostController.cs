@@ -35,9 +35,7 @@ namespace DevopsApp.Controllers
                 ImageUrl = blogModel.ImageUrl
             };
 
-            _dbContext.BlogTable.Add(post);
-
-            _dbContext.SaveChanges();
+            _dbContext.AddBlog(post);
 
             return RedirectToAction("Index", "Home");
         }
